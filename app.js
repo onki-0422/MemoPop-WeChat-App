@@ -1,8 +1,8 @@
 App({
   onLaunch() {
-    // 初始化云开发（如果使用）
+    // 初始化云开发
     wx.cloud.init({
-      env: 'cloud1-7g152bmda6251df1',
+      env: '***',
       traceUser: true
     });
   },
