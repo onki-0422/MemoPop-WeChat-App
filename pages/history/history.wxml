@@ -1,0 +1,13 @@
+<view class="container">
+  <block wx:for="{{memos}}" wx:key="id">
+    <view class="memo-card">
+      <text class="time">{{item.time}}</text>
+      <text class="content">{{item.content}}</text>
+      <text class="category-tag">{{item.category}}</text>
+    </view>
+  </block>
+  
+  <view wx:if="{{memos.length === 0}}" class="empty-tip">
+    <text>暂无历史记录</text>
+  </view>
+</view>

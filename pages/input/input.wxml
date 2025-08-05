@@ -1,0 +1,34 @@
+<!-- pages/input/input.wxml -->
+<view class="container">
+  <!-- 输入区域 -->
+  <view class="input-area">
+    <textarea 
+      value="{{currentContent}}" 
+      placeholder="请输入待办事项内容..." 
+      bindinput="onInput"
+      auto-height
+      class="content-input"
+    ></textarea>
+  </view>
+  
+  <!-- 分类选择 -->
+  <view class="category-selector">
+    <picker 
+      mode="selector" 
+      range="{{categories}}" 
+      value="{{currentCategoryIndex}}"
+      bindchange="onCategoryChange"
+    >
+      <view class="picker">
+        当前分类：{{categories[currentCategoryIndex]}}
+      </view>
+    </picker>
+  </view>
+  
+  <!-- 保存按钮 -->
+  <button 
+    type="primary" 
+    bindtap="saveMemo"
+    class="save-btn"
+  >save</button>
+</view>

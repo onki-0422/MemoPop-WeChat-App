@@ -1,0 +1,17 @@
+<view class="container">
+  <block wx:for="{{categories}}" wx:key="*this">
+    <view class="category-section">
+      <text class="category-title">{{item}}</text>
+      <block wx:for="{{todos}}" wx:for-item="todo" wx:key="id">
+        <view class="todo-item" wx:if="{{todo.category === item}}">
+          <checkbox checked="{{todo.done}}" bindtap="toggleTodo" data-id="{{todo.id}}"></checkbox>
+          <text>{{todo.content}}</text>
+        </view>
+      </block>
+    </view>
+  </block>
+  
+  <view wx:if="{{todos.length === 0}}" class="empty-tip">
+    <text>暂无待办事项</text>
+  </view>
+</view>

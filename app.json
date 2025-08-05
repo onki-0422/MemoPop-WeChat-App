@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/input/input",
+    "pages/history/history",
+    "pages/todo/todo"
+  ],
+  "window": {
+    "navigationBarTitleText": "MemoPop",
+    "navigationBarBackgroundColor": "#ffd9e6",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/input/input",
+        "text": "记录",
+        "iconPath": "images/input.png",
+        "selectedIconPath": "images/input.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史",
+        "iconPath": "images/history.png",
+        "selectedIconPath": "images/history.png"
+      },
+      {
+        "pagePath": "pages/todo/todo",
+        "text": "待办",
+        "iconPath": "images/todo.png",
+        "selectedIconPath": "images/todo.png"
+      }
+    ],
+    "color": "#ef6f82",
+    "selectedColor": "#e8cfd2"
+  }
+}
